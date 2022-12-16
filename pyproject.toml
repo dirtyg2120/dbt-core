@@ -9,3 +9,6 @@ namespace_packages = true
 force-exclude = 'test'
 line-length = 99
 target-version = ['py38']
+
+[tool.setuptools]
+py-modules = []
