@@ -250,6 +250,10 @@ class ModelRunner(CompileRunner):
         materialization_macro = manifest.find_materialization_macro_by_name(
             self.config.project_name, model.get_materialization(), self.adapter.type()
         )
+        print(self.config.project_name)
+        print(model.get_materialization())
+        print(self.adapter.type())
+        print(materialization_macro)
 
         if materialization_macro is None:
             missing_materialization(model, self.adapter.type())
